@@ -1,0 +1,72 @@
+<!--Todo List Create by Govind Garg-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Linking Font Awesome Script-->
+    <script src="https://kit.fontawesome.com/3dce9717da.js" crossorigin="anonymous"></script>
+
+    <!--Linking CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title-->
+    <title>TODO-List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-list-app">
+            <h1><img src="static/todo_list.png" alt="todo_list_image" />Todo List</h1>
+            <div class="row">
+                <i id="row-i" class="fa-solid fa-list-check fa-fade"></i><!--Icon-->
+                <input type="text" class="add-tasks" id="add" placeholder="Add your task in list"/>
+                <button class="rbutton" id="button">Add</button>
+            </div>
+
+            <div class="mid-Portion">
+                <i id="mid-i"class="fa-solid fa-check-double fa-lg"></i>
+                <p id="Complete-All">Complete All Tasks</p>                
+                <p id="Reset-All">Reset All Tasks</p>
+
+            </div>
+
+            <!-- This tag is use for List-->
+            <ul id="list">
+                <li>
+                    <input type="checkbox" id="task" data-id="tast1" class="list-checkbox"/>
+                </li>
+            </ul>
+
+            <div Class="Filter">
+                <div class="dropdown">
+                <button id="fbutton"class="dropbtn">Filter</button>
+                  <div class="dropdown-Content">
+                    <a href="#" id="all">All Task</a>
+                    <a href="#" id="Completed">Completed Task</a>
+                    <a href="#" id="Uncompleted">Uncompleted Task</a>
+                  </div>
+                </div>    
+                
+                <div class="Completed-task">
+                    <p>Completed: <span id="Complete-count">0</span></p>
+                </div>
+
+                <div class="Remaining-task">
+                    <p><span id="total-task">Total Task: <span id="Task-count">0</span></span></p>
+                </div>
+
+            </div>           
+
+        </div>
+
+    </div>
+
+    <!-- Linking External Javascript-->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--Todo List Create by Govind Garg-->

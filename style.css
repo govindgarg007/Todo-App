@@ -1,0 +1,270 @@
+
+/*For All Web page */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Container */
+
+.container{
+    width: auto;
+    min-height: 100vh;
+    background: gray;
+    padding: 10px;
+}
+
+/* Todo-list-app */
+
+.todo-list-app{
+    width: 100%;
+    max-width: 550px;
+    background: whitesmoke;
+    border: 3px solid black;
+    margin: 110px auto 21px;
+    padding: 15px 28px 85px;
+    border-radius: 20px;
+
+}
+
+/* Todo-list-app h1 */
+
+.todo-list-app h1{
+    display: flex;
+    color: black;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+/* Todo-list-app h1 img */
+
+.todo-list-app h1 img{
+    width: 3;
+    height: 30px;
+    margin-left: 12px;
+}
+
+/* Todo-list-app input box */
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(240, 221, 221);
+    border-radius: 32px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#row-i{
+    margin-left: 2px;
+    margin-top: 2px;
+    align-items: center;    
+}
+
+input{
+    position: relative;
+    flex: 1;
+    border: 1px;
+    outline: 1px;
+    background: none;
+    padding: 15px;
+    font-size: x-large;
+}
+
+.rbutton{
+    border: 1px solid black;
+    outline: none;
+    padding: 17px 50px;
+    background: #fd1d04;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: 600;
+}
+.rbutton:hover{
+    background-color: green;
+}
+/* Todo List Create by Govind Garg */
+/* Todo-list-app Mid Portion */
+
+.mid-Portion{
+    display: flex;
+    font-size: 1.3rem;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+#mid-i{
+    margin-top: 15px;
+}
+
+#Complete-All{
+    margin-left: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#Reset-All{
+    margin-left: 90px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+/* Stylist On list */
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    align-items: center;
+    font-weight: 500;
+}
+
+ul li:hover {
+    background-color:rgba(100, 217, 170, 0.908);
+    border-radius: 10px;
+}
+
+#list input{
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+#list label{
+    position: relative;
+    cursor: pointer;
+    font-size: larger;
+}
+
+#list label::before{
+    content: '';
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#list input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 7px;
+    height: 15px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+#list input:checked + label:before {
+    background: #0079bf;
+} 
+
+#list input:checked + label {
+    text-decoration: line-through;
+}
+
+.delete {
+    height: 35px;
+    padding: 2px 0px;
+    border-radius: 3px;
+}
+
+.delete:hover {
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+
+/* Dropdown Content */
+
+.Filter{
+    margin-top: 45px;
+    margin-left: 30px;
+}
+#fbutton{
+    background-color: #696969;
+    padding: 7px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color:rgb(255, 255, 255);
+    border-radius: 7px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-Content{
+    display: none;
+    position: absolute;
+    background-color: rgba(214, 233, 245, 0.9);
+    min-width: 165px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+    border-radius: 5px;
+
+}
+
+.dropdown-Content a{
+    color: rgb(255, 255, 255);
+    padding: 3px 16px;
+    text-decoration: dotted;   
+    display: block;
+    border-radius: 10px;
+}
+/* Todo List Create by Govind Garg */
+.dropdown-Content a:hover {
+    background-color: #1a1a1aa7
+    
+}
+
+.dropdown:hover .dropdown-Content {
+    display: block;
+}
+  
+.dropdown:hover #fbutton {
+    background-color: #423131;
+}  
+
+.Completed-task{
+    display: inline-block;
+    margin-left: 70px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.Remaining-task{
+    display: inline-block;
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: large;
+}
